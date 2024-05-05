@@ -1,0 +1,117 @@
+import React from "react";
+import "./App.css"
+
+function App() {
+  var colors = [
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "orange",
+    "purple",
+    "pink",
+    "brown",
+    "black",
+    "white",
+    "cyan",
+    "magenta",
+    "gray",
+    "lime",
+    "olive",
+    "maroon",
+    "navy",
+    "teal",
+    "silver",
+    "gold",
+    "indigo",
+    "violet",
+    "turquoise",
+    "coral",
+    "salmon",
+    "sky blue",
+    "lavender",
+    "mint green",
+    "peach",
+    "tan",
+    "ruby",
+    "emerald",
+    "sapphire",
+    "topaz",
+    "amethyst",
+    "pearl",
+    "ivory",
+    "charcoal",
+    "khaki",
+    "chocolate",
+    "plum",
+    "auburn",
+    "burgundy",
+    "mauve",
+    "taupe",
+    "beige",
+    "mustard",
+    "lemon",
+    "fuchsia",
+    "cerulean",
+    "rust",
+    "azure",
+    "rose",
+    "sienna",
+    "cyan",
+    "lavender blush",
+    "thistle",
+    "orchid",
+    "periwinkle",
+    "chartreuse",
+    "aquamarine",
+    "firebrick",
+    "crimson",
+    "dark green",
+    "dark blue",
+    "dark red",
+    "dark orange",
+    "dark violet",
+    "dark cyan",
+    "dark magenta",
+    "dark gray",
+    "dark olive",
+    "dark maroon",
+    "dark navy",
+    "dark purple",
+    "dark brown",
+    "dark pink",
+    "dark coral",
+    "dark salmon",
+    "dark turquoise",
+    "dark khaki",
+    "dark tan",
+    "dark beige",
+    "dark slate gray",
+    "dark slate blue",
+    "dark goldenrod",
+    "dark seagreen",
+    "dark slateblue",
+    "dark orchid",
+    "dark olivegreen",
+    "dark grayish blue",
+    "dark pale green",
+    "dark pale yellow",
+    "dark pale orange",
+    "dark pale red",
+  ];
+  function bgChange() {
+    let randomNumber = Math.floor(Math.random() * colors.length);
+    console.log(randomNumber);
+    document.body.style.backgroundColor = colors[randomNumber];
+  }
+  return (
+    <div>
+     <div className="main">
+     Background color changer
+      <button onClick={bgChange}>Click me</button>
+     </div>
+    </div>
+  );
+}
+
+export default App;
